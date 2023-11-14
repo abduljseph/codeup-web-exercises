@@ -13,15 +13,29 @@
  *  > analyzeColor('blue') // returns "blue is the color of the sky"
  *  > analyzeColor('red') // returns "Strawberries are red"
  *
- *
  *  > analyzeColor('cyan') // returns "I don't know anything about cyan"
- *
+
  * You should use an if-else-if-else block to return different messages.
  *
  * Test your function by passing various string literals to it and
  * console.logging the function's return value
  */
 
+function analyzeColor (color) {
+  // let userInput =prompt("Please enter a color");
+   let colorName;
+    if (color === "blue") {
+        colorName = "Blue is the Color of Water";
+    } else if (color === "red"){
+        colorName = "Red is the Color of blood";
+
+    } else {
+       colorName = "I dont know this Color";
+
+    }
+    return colorName;
+}
+//console.log(analyzeColor());
 // Don't change the next two lines!
 // These lines create two variables for you:
 // - `colors`: a list of the colors of the rainbow
@@ -29,16 +43,34 @@
 //                  will contain a different color every time the page loads)
 const colors = ['red', 'orange', 'yellow', 'green', 'blue', 'indigo', 'violet'];
 const randomColor = colors[Math.floor(Math.random() * colors.length)];
+console.log(randomColor);
 /**
  * TODO:
  * Pass the `randomColor` variable to your 'analyzeColor' function and console.log the results.
  * You should see a different message every time you refresh the page
  */
 
+//console.log(analyzeColor(randomColor));
+
 /**
  * TODO:
  * Comment out the code above, and refactor your function to use a switch-case statement
  */
+//console.log("Weareabouttogointotheswitchstatwmwent");
+// let colorName  = prompt("What color do you like?");
+
+//  switch (colorName){
+//     case "blue" :
+//         alert("Blue is the color of Water.");
+//         break;
+//     case "red":
+//         alert("Red is the color of blood.")
+//         break;
+//     default:
+//         alert(`${colorName} isn't my favorite color, but is ok!`);
+//         break;
+// }
+
 
 /**
  * TODO:
@@ -46,6 +78,9 @@ const randomColor = colors[Math.floor(Math.random() * colors.length)];
  * user to your `analyzeColor` function. Alert the return value from your
  * function to show it to the user.
  */
+// let userInput =prompt("Please enter a color");
+// alert("Following this is the alert for function")
+// alert(analyzeColor(userInput));
 
 /* ########################################################################## */
 
@@ -69,7 +104,10 @@ const randomColor = colors[Math.floor(Math.random() * colors.length)];
  * return value.
  */
 
-/**
+function calculateTotal(luckyNumber, totalAmount);
+let totalAmount = prompt("Let totalAmount equal customer bill.");
+
+/**s
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
  * (In this line of code, 0 is inclusive, and 6 is exclusive)
