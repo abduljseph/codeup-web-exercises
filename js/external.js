@@ -12,6 +12,7 @@ let herculesRentedDays   = prompt ("How many days did you rent Hercules?");
 let costOfRentalPerDay = prompt("How much is the movie per day?")
 let totalRentalAmount=  rentalRate* littleMermaidRentedDays+rentalRate* brotherBearRentedDays+ rentalRate *herculesRentedDays  ;
 alert(`You spent$${totalRentalAmount.toFixed (2)}`) on rental moves this week');
+
 let googleHoursWorked = Number(prompt ("How many hours did you work for Google?");
 let amazonHoursWorked = Number(prompt( "How many hours did you work for Amazon?");
 let facebookHoursWorked = Number( (prompt( "How many hours did you work for Facebook");
