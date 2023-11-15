@@ -104,9 +104,24 @@ console.log(randomColor);
  * return value.
  */
 
-function calculateTotal(luckyNumber, totalAmount);
+function calculateTotal(luckyNumber, totalAmount) {
+    if (luckyNumber === 0) {
+        return totalAmount;
+    } else if (luckyNumber === 5) {
+        return 0;
+    } else if (luckyNumber === 1) {
+        return totalAmount * 0.9;
+    } else if (luckyNumber === 2) {
+        return totalAmount * 0.75;
+    } else if (luckyNumber === 3) {
+        return totalAmount * 0.65;
+    } else {
+        return totalAmount * 0.5;
+    }
+}
 let totalAmount = prompt("Let totalAmount equal customer bill.");
 
+    return//discounted price
 /**s
  * TODO:
  * Uncomment the line below to generate a random number between 0 and 5.
@@ -118,12 +133,20 @@ let totalAmount = prompt("Let totalAmount equal customer bill.");
 // Generate a random number between 0 and 6
 // const luckyNumber = Math.floor(Math.random() * 6);
 
+const userTotal = prompt("Enter your total amount");
+const totalAfterDiscount = calculateTotal(luckyNumber,userTotal);
+alert(`Your lucky number is:${luckyNumber}`);
+alert(`The price before discount is: $${}`);
+alert(`The price after discount is:$${} `);
 /**
  * TODO:
  * Write some JavaScript that uses a `confirm` dialog to ask the user if they
  * would like to enter a number. If they click 'Ok', prompt the user for a
  * number, then use 3 separate alerts to tell the user:
- *
+
+
+
+
  * - whether the number is even or odd
  * - what the number plus 100 is
  * - if the number is negative or positive
@@ -136,3 +159,26 @@ let totalAmount = prompt("Let totalAmount equal customer bill.");
  * Can you refactor your code to use functions?
  * HINT: The way we prompt for a value could be improved
  */
+
+function alertEvenorOdd(number) {
+    const numPlus100 = userNumber + 100;
+    alert(${userNumber} + 100 = ${numPlus100`);
+
+}
+
+const userContinue = confirm("Do you want to enter a number?");
+if(userContinue){
+     const userNumber = Number( prompt("Enter a number."));
+    if(!isNaN(userNumber)) {
+    const isEven = userNumber % 2 ===0
+    if(isEven) {
+
+    }
+    alert(`${userNumber}is ${isEven ? 'even' : 'odd'`);
+}
+    const numPlus100 = userNumber + 100;
+    alert(${userNumber} + 100 = ${numPlus100`);
+    
+   
+   const isPositive = userNumber >=0;
+   alert(`${userNumber} is ${isPositive ? 'positive' : 'negative}');
